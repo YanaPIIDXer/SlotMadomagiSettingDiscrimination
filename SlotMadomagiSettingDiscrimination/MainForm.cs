@@ -72,8 +72,12 @@ namespace SlotMadomagiSettingDiscrimination
 		/// <param name="ExpectionLabel">期待値ラベル</param>
 		private void UpdateExpectionControls(float Expection, ProgressBar ExpectionBar, Label ExpectionLabel)
 		{
-			ExpectionBar.Value = (int)Expection;
-			ExpectionLabel.Text = string.Format("{0}%", Expection);
+			try
+			{
+				ExpectionBar.Value = (int)Expection;
+				ExpectionLabel.Text = string.Format("{0}%", Expection);
+			}
+			catch { }
 		}
 	}
 }
