@@ -41,10 +41,29 @@
 			this.WeakCherryIncrementButton = new System.Windows.Forms.Button();
 			this.WeakCherryDecrementButton = new System.Windows.Forms.Button();
 			this.ExpectionPage = new System.Windows.Forms.TabPage();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.label7 = new System.Windows.Forms.Label();
+			this.label8 = new System.Windows.Forms.Label();
+			this.label9 = new System.Windows.Forms.Label();
+			this.label10 = new System.Windows.Forms.Label();
+			this.Setting1ExpectionBar = new System.Windows.Forms.ProgressBar();
+			this.Setting1ExpectionLabel = new System.Windows.Forms.Label();
+			this.Setting2ExpectionLabel = new System.Windows.Forms.Label();
+			this.Setting2ExpectionBar = new System.Windows.Forms.ProgressBar();
+			this.Setting3ExpectionLabel = new System.Windows.Forms.Label();
+			this.Setting3ExpectionBar = new System.Windows.Forms.ProgressBar();
+			this.Setting4ExpectionLabel = new System.Windows.Forms.Label();
+			this.Setting4ExpectionBar = new System.Windows.Forms.ProgressBar();
+			this.Setting5ExpectionLabel = new System.Windows.Forms.Label();
+			this.Setting5ExpectionBar = new System.Windows.Forms.ProgressBar();
+			this.Setting6ExpectionLabel = new System.Windows.Forms.Label();
+			this.Setting6ExpectionBar = new System.Windows.Forms.ProgressBar();
 			((System.ComponentModel.ISupportInitialize)(this.StartGameCountUpDown)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.CurrentGameCountUpDown)).BeginInit();
 			this.tabControl1.SuspendLayout();
 			this.WeakCherryPage.SuspendLayout();
+			this.ExpectionPage.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -176,12 +195,186 @@
 			// ExpectionPage
 			// 
 			this.ExpectionPage.BackColor = System.Drawing.Color.Transparent;
+			this.ExpectionPage.Controls.Add(this.Setting6ExpectionLabel);
+			this.ExpectionPage.Controls.Add(this.Setting6ExpectionBar);
+			this.ExpectionPage.Controls.Add(this.Setting5ExpectionLabel);
+			this.ExpectionPage.Controls.Add(this.Setting5ExpectionBar);
+			this.ExpectionPage.Controls.Add(this.Setting4ExpectionLabel);
+			this.ExpectionPage.Controls.Add(this.Setting4ExpectionBar);
+			this.ExpectionPage.Controls.Add(this.Setting3ExpectionLabel);
+			this.ExpectionPage.Controls.Add(this.Setting3ExpectionBar);
+			this.ExpectionPage.Controls.Add(this.Setting2ExpectionLabel);
+			this.ExpectionPage.Controls.Add(this.Setting2ExpectionBar);
+			this.ExpectionPage.Controls.Add(this.Setting1ExpectionLabel);
+			this.ExpectionPage.Controls.Add(this.Setting1ExpectionBar);
+			this.ExpectionPage.Controls.Add(this.label8);
+			this.ExpectionPage.Controls.Add(this.label9);
+			this.ExpectionPage.Controls.Add(this.label10);
+			this.ExpectionPage.Controls.Add(this.label7);
+			this.ExpectionPage.Controls.Add(this.label6);
+			this.ExpectionPage.Controls.Add(this.label5);
 			this.ExpectionPage.Location = new System.Drawing.Point(4, 25);
 			this.ExpectionPage.Name = "ExpectionPage";
 			this.ExpectionPage.Padding = new System.Windows.Forms.Padding(3);
 			this.ExpectionPage.Size = new System.Drawing.Size(768, 372);
 			this.ExpectionPage.TabIndex = 1;
 			this.ExpectionPage.Text = "期待値";
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Location = new System.Drawing.Point(95, 63);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(47, 15);
+			this.label5.TabIndex = 0;
+			this.label5.Text = "設定１";
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Location = new System.Drawing.Point(95, 110);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(47, 15);
+			this.label6.TabIndex = 1;
+			this.label6.Text = "設定２";
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Location = new System.Drawing.Point(95, 159);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(47, 15);
+			this.label7.TabIndex = 2;
+			this.label7.Text = "設定３";
+			// 
+			// label8
+			// 
+			this.label8.AutoSize = true;
+			this.label8.Location = new System.Drawing.Point(95, 299);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(47, 15);
+			this.label8.TabIndex = 5;
+			this.label8.Text = "設定６";
+			// 
+			// label9
+			// 
+			this.label9.AutoSize = true;
+			this.label9.Location = new System.Drawing.Point(95, 250);
+			this.label9.Name = "label9";
+			this.label9.Size = new System.Drawing.Size(47, 15);
+			this.label9.TabIndex = 4;
+			this.label9.Text = "設定５";
+			// 
+			// label10
+			// 
+			this.label10.AutoSize = true;
+			this.label10.Location = new System.Drawing.Point(95, 203);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(47, 15);
+			this.label10.TabIndex = 3;
+			this.label10.Text = "設定４";
+			// 
+			// Setting1ExpectionBar
+			// 
+			this.Setting1ExpectionBar.Location = new System.Drawing.Point(207, 63);
+			this.Setting1ExpectionBar.Name = "Setting1ExpectionBar";
+			this.Setting1ExpectionBar.Size = new System.Drawing.Size(370, 23);
+			this.Setting1ExpectionBar.TabIndex = 6;
+			this.Setting1ExpectionBar.Value = 20;
+			// 
+			// Setting1ExpectionLabel
+			// 
+			this.Setting1ExpectionLabel.AutoSize = true;
+			this.Setting1ExpectionLabel.Location = new System.Drawing.Point(630, 71);
+			this.Setting1ExpectionLabel.Name = "Setting1ExpectionLabel";
+			this.Setting1ExpectionLabel.Size = new System.Drawing.Size(31, 15);
+			this.Setting1ExpectionLabel.TabIndex = 7;
+			this.Setting1ExpectionLabel.Text = "20%";
+			// 
+			// Setting2ExpectionLabel
+			// 
+			this.Setting2ExpectionLabel.AutoSize = true;
+			this.Setting2ExpectionLabel.Location = new System.Drawing.Point(630, 118);
+			this.Setting2ExpectionLabel.Name = "Setting2ExpectionLabel";
+			this.Setting2ExpectionLabel.Size = new System.Drawing.Size(31, 15);
+			this.Setting2ExpectionLabel.TabIndex = 9;
+			this.Setting2ExpectionLabel.Text = "20%";
+			// 
+			// Setting2ExpectionBar
+			// 
+			this.Setting2ExpectionBar.Location = new System.Drawing.Point(207, 110);
+			this.Setting2ExpectionBar.Name = "Setting2ExpectionBar";
+			this.Setting2ExpectionBar.Size = new System.Drawing.Size(370, 23);
+			this.Setting2ExpectionBar.TabIndex = 8;
+			this.Setting2ExpectionBar.Value = 20;
+			// 
+			// Setting3ExpectionLabel
+			// 
+			this.Setting3ExpectionLabel.AutoSize = true;
+			this.Setting3ExpectionLabel.Location = new System.Drawing.Point(630, 167);
+			this.Setting3ExpectionLabel.Name = "Setting3ExpectionLabel";
+			this.Setting3ExpectionLabel.Size = new System.Drawing.Size(31, 15);
+			this.Setting3ExpectionLabel.TabIndex = 11;
+			this.Setting3ExpectionLabel.Text = "20%";
+			// 
+			// Setting3ExpectionBar
+			// 
+			this.Setting3ExpectionBar.Location = new System.Drawing.Point(207, 159);
+			this.Setting3ExpectionBar.Name = "Setting3ExpectionBar";
+			this.Setting3ExpectionBar.Size = new System.Drawing.Size(370, 23);
+			this.Setting3ExpectionBar.TabIndex = 10;
+			this.Setting3ExpectionBar.Value = 20;
+			// 
+			// Setting4ExpectionLabel
+			// 
+			this.Setting4ExpectionLabel.AutoSize = true;
+			this.Setting4ExpectionLabel.Location = new System.Drawing.Point(630, 211);
+			this.Setting4ExpectionLabel.Name = "Setting4ExpectionLabel";
+			this.Setting4ExpectionLabel.Size = new System.Drawing.Size(31, 15);
+			this.Setting4ExpectionLabel.TabIndex = 13;
+			this.Setting4ExpectionLabel.Text = "20%";
+			// 
+			// Setting4ExpectionBar
+			// 
+			this.Setting4ExpectionBar.Location = new System.Drawing.Point(207, 203);
+			this.Setting4ExpectionBar.Name = "Setting4ExpectionBar";
+			this.Setting4ExpectionBar.Size = new System.Drawing.Size(370, 23);
+			this.Setting4ExpectionBar.TabIndex = 12;
+			this.Setting4ExpectionBar.Value = 20;
+			// 
+			// Setting5ExpectionLabel
+			// 
+			this.Setting5ExpectionLabel.AutoSize = true;
+			this.Setting5ExpectionLabel.Location = new System.Drawing.Point(630, 258);
+			this.Setting5ExpectionLabel.Name = "Setting5ExpectionLabel";
+			this.Setting5ExpectionLabel.Size = new System.Drawing.Size(31, 15);
+			this.Setting5ExpectionLabel.TabIndex = 15;
+			this.Setting5ExpectionLabel.Text = "20%";
+			// 
+			// Setting5ExpectionBar
+			// 
+			this.Setting5ExpectionBar.Location = new System.Drawing.Point(207, 250);
+			this.Setting5ExpectionBar.Name = "Setting5ExpectionBar";
+			this.Setting5ExpectionBar.Size = new System.Drawing.Size(370, 23);
+			this.Setting5ExpectionBar.TabIndex = 14;
+			this.Setting5ExpectionBar.Value = 20;
+			// 
+			// Setting6ExpectionLabel
+			// 
+			this.Setting6ExpectionLabel.AutoSize = true;
+			this.Setting6ExpectionLabel.Location = new System.Drawing.Point(630, 307);
+			this.Setting6ExpectionLabel.Name = "Setting6ExpectionLabel";
+			this.Setting6ExpectionLabel.Size = new System.Drawing.Size(31, 15);
+			this.Setting6ExpectionLabel.TabIndex = 17;
+			this.Setting6ExpectionLabel.Text = "20%";
+			// 
+			// Setting6ExpectionBar
+			// 
+			this.Setting6ExpectionBar.Location = new System.Drawing.Point(207, 299);
+			this.Setting6ExpectionBar.Name = "Setting6ExpectionBar";
+			this.Setting6ExpectionBar.Size = new System.Drawing.Size(370, 23);
+			this.Setting6ExpectionBar.TabIndex = 16;
+			this.Setting6ExpectionBar.Value = 20;
 			// 
 			// MainForm
 			// 
@@ -200,6 +393,8 @@
 			this.tabControl1.ResumeLayout(false);
 			this.WeakCherryPage.ResumeLayout(false);
 			this.WeakCherryPage.PerformLayout();
+			this.ExpectionPage.ResumeLayout(false);
+			this.ExpectionPage.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -220,6 +415,24 @@
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label WeakCherryProbabilityLabel;
 		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.Label label8;
+		private System.Windows.Forms.Label label9;
+		private System.Windows.Forms.Label label10;
+		private System.Windows.Forms.Label label7;
+		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.Label Setting1ExpectionLabel;
+		private System.Windows.Forms.ProgressBar Setting1ExpectionBar;
+		private System.Windows.Forms.Label Setting6ExpectionLabel;
+		private System.Windows.Forms.ProgressBar Setting6ExpectionBar;
+		private System.Windows.Forms.Label Setting5ExpectionLabel;
+		private System.Windows.Forms.ProgressBar Setting5ExpectionBar;
+		private System.Windows.Forms.Label Setting4ExpectionLabel;
+		private System.Windows.Forms.ProgressBar Setting4ExpectionBar;
+		private System.Windows.Forms.Label Setting3ExpectionLabel;
+		private System.Windows.Forms.ProgressBar Setting3ExpectionBar;
+		private System.Windows.Forms.Label Setting2ExpectionLabel;
+		private System.Windows.Forms.ProgressBar Setting2ExpectionBar;
 	}
 }
 

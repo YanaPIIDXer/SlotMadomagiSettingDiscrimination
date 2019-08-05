@@ -26,6 +26,7 @@ namespace SlotMadomagiSettingDiscrimination
 		public MainForm()
 		{
 			MachineInfo = new MadomagiMachine();
+			MachineInfo.OnExpectionChanged = OnExpectionUpdated;
 			InitializeComponent();
 		}
 
@@ -48,6 +49,31 @@ namespace SlotMadomagiSettingDiscrimination
 			MachineInfo.CurrentGameCount = (int)CurrentGameCountUpDown.Value;
 
 			UpdateWeakCherryLabels();
+		}
+
+		/// <summary>
+		/// 期待値更新時の処理
+		/// </summary>
+		private void OnExpectionUpdated()
+		{
+			UpdateExpectionControls(MachineInfo.GetExpection(1), Setting1ExpectionBar, Setting1ExpectionLabel);
+			UpdateExpectionControls(MachineInfo.GetExpection(2), Setting2ExpectionBar, Setting2ExpectionLabel);
+			UpdateExpectionControls(MachineInfo.GetExpection(3), Setting3ExpectionBar, Setting3ExpectionLabel);
+			UpdateExpectionControls(MachineInfo.GetExpection(4), Setting4ExpectionBar, Setting4ExpectionLabel);
+			UpdateExpectionControls(MachineInfo.GetExpection(5), Setting5ExpectionBar, Setting5ExpectionLabel);
+			UpdateExpectionControls(MachineInfo.GetExpection(6), Setting6ExpectionBar, Setting6ExpectionLabel);
+		}
+
+		/// <summary>
+		/// 期待値コントロールの更新
+		/// </summary>
+		/// <param name="Expection">期待値</param>
+		/// <param name="ExpectionBar">期待値バー</param>
+		/// <param name="ExpectionLabel">期待値ラベル</param>
+		private void UpdateExpectionControls(float Expection, ProgressBar ExpectionBar, Label ExpectionLabel)
+		{
+			ExpectionBar.Value = (int)Expection;
+			ExpectionLabel.Text = string.Format("{0}%", Expection);
 		}
 	}
 }
