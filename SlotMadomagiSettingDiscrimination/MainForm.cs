@@ -28,5 +28,26 @@ namespace SlotMadomagiSettingDiscrimination
 			MachineInfo = new MadomagiMachine();
 			InitializeComponent();
 		}
+
+		// 開始ゲーム数が変動した。
+		private void StartGameCountUpDown_ValueChanged(object sender, EventArgs e)
+		{
+			// 現在ゲーム数が開始ゲーム数を超えないようにする。
+			if(CurrentGameCountUpDown.Value < StartGameCountUpDown.Value)
+			{
+				CurrentGameCountUpDown.Value = StartGameCountUpDown.Value;
+			}
+			CurrentGameCountUpDown.Minimum = StartGameCountUpDown.Value;
+
+			MachineInfo.StartGameCount = (int) StartGameCountUpDown.Value;
+		}
+
+		// 現在ゲーム数が変動した。
+		private void CurrentGameCountUpDown_ValueChanged(object sender, EventArgs e)
+		{
+			MachineInfo.CurrentGameCount = (int)CurrentGameCountUpDown.Value;
+
+			UpdateWeakCherryLabels();
+		}
 	}
 }
