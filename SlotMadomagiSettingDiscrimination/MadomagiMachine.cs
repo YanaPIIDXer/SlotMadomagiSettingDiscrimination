@@ -18,6 +18,7 @@ namespace SlotMadomagiSettingDiscrimination
 		public MadomagiMachine()
 		{
 			AddElement(new WeakCherryElement());
+			AddElement(new MagicalChallengeElement());
 			UpdateExpection();
 		}
 	}
