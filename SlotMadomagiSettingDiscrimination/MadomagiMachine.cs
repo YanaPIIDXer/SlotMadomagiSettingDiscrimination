@@ -17,7 +17,7 @@ namespace SlotMadomagiSettingDiscrimination
 		/// </summary>
 		public MadomagiMachine()
 		{
-
+			AddElement(new WeakCherryElement());
 		}
 	}
 }
