@@ -30,7 +30,7 @@ namespace SlotMadomagiSettingDiscrimination
 		/// <summary>
 		/// カウント
 		/// </summary>
-		private int Count;
+		public int Count { get; private set; }
 
 		/// <summary>
 		/// コンストラクタ
