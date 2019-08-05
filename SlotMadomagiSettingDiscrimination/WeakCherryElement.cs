@@ -67,7 +67,7 @@ namespace SlotMadomagiSettingDiscrimination
 			float[] BinomDists = new float[6];
 			for(int i = 0; i < 6; i++)
 			{
-				BinomDists[i] = Util.CalcBinomDist((ulong) GameCount, (ulong) Count, Probabilitys[i]);
+				BinomDists[i] = Util.CalcBinomDist((ulong) GameCount, (ulong) Count, 1.0f / Probabilitys[i]);
 			}
 
 			return Util.BinomDistToExpection(BinomDists);
